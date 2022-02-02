@@ -1,0 +1,8 @@
+version: '3'
+services:
+  api:
+    image: mayankm31/todoapp:beta
+    hostname: todoapp
+    ports:
+      - "1338:1337"
+
