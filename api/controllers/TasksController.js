@@ -12,7 +12,7 @@ module.exports = {
     const { boardId } = req.query;
     try {
       await Tasks.find({boardId:boardId})
-        .sort([{ createdAt: "DESC" }])
+        .sort([{ createdAt: "ASC" }])
         .then((task, err) => {
           if (err) {
             return res.serverError({
